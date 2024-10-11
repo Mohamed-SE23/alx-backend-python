@@ -7,7 +7,7 @@ returns the floor of the number.
 
 import math
 
-def floor(n: float) -> float:
+def floor(n: float) -> int:
     """
     Returns the floor of the number.
 
