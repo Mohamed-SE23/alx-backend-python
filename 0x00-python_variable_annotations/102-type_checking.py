@@ -5,10 +5,10 @@ on elements of a tuple by repeating them.
 """
 
 
-from typing import List, Tuple, Union
+from typing import List, Tuple
 
 
-def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """
     Zooms in on elements of a tuple by repeating them a number of times.
 
@@ -20,7 +20,7 @@ def zoom_array(lst: Tuple[int, ...], factor: int = 2) -> List[int]:
     Returns:
         List[int]: A list with elements repeated according to the factor.
     """
-    zoomed_in: List[int] = [
+    zoomed_in: List = [
         item for item in lst
         for i in range(factor)
     ]
