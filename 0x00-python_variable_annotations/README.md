@@ -8,4 +8,5 @@
 6- Complex types - mixed list
 7- Complex types - string and int/float to tuple
 8- Complex types - functions
+9- Duck type an iterable object
 
