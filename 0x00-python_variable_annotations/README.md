@@ -7,4 +7,5 @@
 5- Complex types - list of floats
 6- Complex types - mixed list
 7- Complex types - string and int/float to tuple
+8- Complex types - functions
 
