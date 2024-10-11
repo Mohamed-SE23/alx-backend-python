@@ -5,14 +5,14 @@ retreve a value from a dectionary.
 """
 
 
-from typing import Any, TypeVar, Mapping, Optional
+from typing import Any, TypeVar, Mapping, Union
 
 
 T = TypeVar('T')
 
 
-def safely_get_value(dct: Mapping[Any, T], key: Any,
-                     default: Optional[T] = None) -> Optional[T]:
+def safely_get_value(dct: Mapping, key: Any,
+                     default: Union[T, None] = None) -> Union[Any, T]:
     """
     Safely retrieves a value from a dictionary. If the key is not found,
     it returns the default value.
